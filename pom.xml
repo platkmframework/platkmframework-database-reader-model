@@ -1,14 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <groupId>org.platkmframework.databasereader</groupId>
   <artifactId>platkmframework-database-reader-model</artifactId>
+  	<version>1.0.1</version>
   
-  <parent>
-  	<groupId>org.platkmframework</groupId>
-  	<artifactId>platkmframework-parent-common</artifactId>
-  	<version>1.0.0</version>
-  </parent> 
-  
-  	<name>org.platkmframework:platkmframework-database-reader-model</name>
+  	<name>org.platkmframework.databasereader:platkmframework-database-reader-model</name>
   	<description> data model to read relational database schema</description>
   	<url>https://github.com/platkmframework/platkmframework-database-reader-model</url>
 	<licenses>
@@ -98,4 +94,13 @@
 		    </plugin>			 
 		</plugins>
 	</build>
+	
+	<dependencies>
+	   <!-- API, java.xml.bind module -->
+		<dependency>
+		    <groupId>jakarta.xml.bind</groupId>
+		    <artifactId>jakarta.xml.bind-api</artifactId>
+		    <version>4.0.2</version>
+		</dependency>
+	</dependencies>
 </project>
